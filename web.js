@@ -9,7 +9,6 @@ var fs      = require('fs');
  
 /***************** Simple file server *****************/
  
-
 var index = '';
 // Cache website
 fs.readFile('./public/index.html', function (err, data) {
@@ -56,8 +55,9 @@ var server = http.createServer(function (request, response) {
 });
  
 // Listen on port 8080 and IP 127.0.0.1
-server.listen(8080, "127.0.0.1");
-console.log('Server running at 127.0.0.1:8080');
+var port = process.env.PORT || 8080;
+server.listen(port, "0.0.0.0");
+console.log('Server running at 0.0.0.0');
 
 /********************* MIME TABLE *********************/
 var mimes = {
