@@ -29,7 +29,7 @@ var server = http.createServer(function (request, response) {
             response.end(cv, 'utf-8');
         } else if (request.url == '/media/css/style.css') {
             response.writeHead(200, { 'Content-Type': 'text/css' });
-            response.end(cv, 'utf-8');
+            response.end(css, 'utf-8');
         } else {
             // Write the file
             url = './public' + request.url
