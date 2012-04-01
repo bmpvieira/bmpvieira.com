@@ -8,16 +8,9 @@ var http    = require('http');
 var fs      = require('fs');
  
 /***************** Simple file server *****************/
- 
-var index = '';
-// Cache website
-fs.readFile('./public/index.html', function (err, data) {
-    if (err) {
-        return console.log(err)
-    }
-    index = data;
-});
 
+var css = fs.readFileSync('./public/media/css/style.css')
+var index = fs.readFileSync('./public/index.html');
 var cv = fs.readFileSync('./public/cv.html');
 var w404 = fs.readFileSync('./public/404.html');
 var w500 = fs.readFileSync('./public/500.html');
@@ -29,10 +22,13 @@ var server = http.createServer(function (request, response) {
     // Serve static files
     if (request.method === "GET"){
         if (request.url == '/'){
-            response.writeHead(200, { 'Content-Type': 'text.html' });
+            response.writeHead(200, { 'Content-Type': 'text/html' });
             response.end(index, 'utf-8');
         } else if (request.url == '/cv') {
-            response.writeHead(200, { 'Content-Type': 'text.html' });
+            response.writeHead(200, { 'Content-Type': 'text/html' });
+            response.end(cv, 'utf-8');
+        } else if (request.url == '/media/css/style.css') {
+            response.writeHead(200, { 'Content-Type': 'text/css' });
             response.end(cv, 'utf-8');
         } else {
             // Write the file
