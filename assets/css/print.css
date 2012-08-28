@@ -72,4 +72,52 @@ border-left: 1px solid #eee;
 
 #header, footer, #navigation, #leftSideBar, .navbar, .subnav
 {display:none;}
+
+.page-header {
+  background: none !important;
+  border: none !important;
+}
+.container-fluid .content {
+  background: none !important;
+  border: none !important;
+  border-radius bottom: none !important;
+  box-shadow: none !important;
+  margin-bottom 10px
+  padding 20px
+}
+
+/* Very specific */
+aside {
+  border: none !important;
+  text-align: left !important;
+  float: right !important;
+}
+.sidebar-personal-info {
+  width: 60% !important;
+}
+aside > img {
+    width: 150px !important;
+    float: right !important;
+    margin: 30px !important
+}
+.span3 {
+  border: none !important;
+  position: absolute !important;
+  top: 110px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  text-align: left !important;
+}
+
+.span9 {
+  position: absolute !important;
+  border: none !important;
+  margin-top: 250px !important;
+  position: absolute !important;
+  width: 100% !important;
+}
+footer {
+  display: none !important;
+}
 }
