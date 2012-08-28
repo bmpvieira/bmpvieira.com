@@ -1,0 +1,15 @@
+extends layout
+block content
+  .page-header
+    h1 500: Internal Server Error
+
+  article
+    //- remove when makeRow() fluid supported
+    .row-fluid
+      .span9
+        section.main
+          | Something seems to be broken, please 
+          a(href="mailto:mail@bmpvieira.com") contact me 
+          | so that I can try to fix it. Thanks!
+
+      include partials/info

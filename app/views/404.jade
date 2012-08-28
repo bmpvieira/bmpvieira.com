@@ -1,0 +1,17 @@
+extends layout
+block content
+  .page-header
+    h1 404: Page Not Found
+
+  article
+    //- remove when makeRow() fluid supported
+    .row-fluid
+      .span9
+        section.main
+          | The page you requested is no longer available, or cannot be found.
+          br
+          |Please double-check the URL (address) you used, or 
+          a(href="mailto:mail@bmpvieira.com") contact me 
+          | if you think you have reached this page by error. Thanks!
+
+      include partials/info

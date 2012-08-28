@@ -1,0 +1,22 @@
+extends layout
+block content
+  .page-header
+    h1 Home
+
+  article
+    //- remove when makeRow() fluid supported
+    .row-fluid
+      .span9
+        section.main
+          :markdown
+            #Welcome
+            I'm a computational biologist at the [Computational Biology and 
+            Population Genomics Group (CoBiG²)](http://cobig2.fc.ul.pt), from the [Faculty of Sciences of the University of Lisbon](http://www.fc.ul.pt).
+
+            This is my personal website, where I'll host my projects, curriculum and eventually a blog.
+
+            It's still under heavy development but you can in the meantime check out my [resume](/cv)! ^_^'
+
+            My current interests are Next-generation sequencing, Cloud computing, Python, Node.js, Scala, NoSQL (Neo4j) and web apps (among others).
+
+      include partials/info

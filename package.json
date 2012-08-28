@@ -1,6 +1,21 @@
 {
   "name": "bmpvieira",
-  "version": "0.0.1",
+  "version": "2.0.0",
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.9"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
   "dependencies": {
+    "express": "3.x",
+    "connect" : "2.x",
+    "connect-assets": "*",
+    "jade": "*",
+    "marked": "*",
+    "stylus": "*",
+    "nib": "*"
   }
 }
