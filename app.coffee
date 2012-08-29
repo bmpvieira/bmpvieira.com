@@ -35,6 +35,9 @@ app.get '/', (req, res) ->
 app.get '/cv', (req, res) ->
     res.render 'cv'
 
+app.get '/cv2', (req, res) ->
+    res.render 'cv2'
+
 # Static assets
 if 'development' is app.get('env')
   app.use express.static(__dirname + '/assets') # should be above session for speed
