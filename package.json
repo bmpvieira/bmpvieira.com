@@ -17,6 +17,7 @@
     "jade": "*",
     "marked": "*",
     "stylus": "*",
-    "nib": "*"
+    "nib": "*",
+    "less": "*"
   }
 }

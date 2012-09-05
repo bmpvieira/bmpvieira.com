@@ -1,5 +1,8 @@
-/* Based on Hartija Css Print  Framework Version:   0.8 (2008-03-10) */
+// Based on Hartija Css Print  Framework Version:   0.8 (2008-03-10)
 @media only print {
+  html {
+    background: none;
+  }
   body { 
     width:100% !important;
     margin:0 !important;
@@ -11,10 +14,7 @@
     color: #000;
     background: none;
     font-size: 12pt;
-    text-shadow: none !important;
-  }
-  article {
-    text-shadow: none !important;
+    text-shadow: none;
   }
   p, ul, li, span {
     font-family: 'Gentium Basic', Garamond,"Times New Roman", serif !important;
@@ -149,9 +149,6 @@
     border: none !important;
     text-align: left !important;
     float: right !important;
-    margin-bottom: 100px !important;
-    padding-bottom: 100px !important;
-    clear: both !important;
   }
   .sidebar-personal-info {
     width: 60% !important;

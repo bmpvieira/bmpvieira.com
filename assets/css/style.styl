@@ -1,10 +1,9 @@
 @import 'nib'
+@import 'font-awesome.css'
 
 /*
  * Non-responsive layout settings
  */
-
-@import 'bootstrap.min.css'
 
 html
   height 100%
@@ -15,7 +14,6 @@ body
   //height 100% this conflicts with twitter's scrollspy
   background transparent
   font-family "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif
-  padding-top 50px
 
 p
   font-family 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
@@ -23,13 +21,14 @@ p
 h1
   text-align center
 
+.page-header
+  border-bottom 1px solid #ddd
+
 .navbar-inner
   background linear-gradient(top,  rgba(255,255,255,0.9) 0%, rgba(246,246,246,0.9) 47%, rgba(237,237,237,0.9) 100%)
-  //background rgba(255,255,255,0.9)
 
 .container-fluid .content
   background white
-  //background linear-gradient(top,  rgba(255,255,255,0.9) 0%, rgba(246,246,246,0.9) 47%, rgba(237,237,237,0.9) 100%)
   background rgba(255,255,255,0.9)
   border 1px solid #999999
   border-radius bottom 14px
@@ -37,10 +36,16 @@ h1
   margin-bottom 10px
   padding 20px
 
+article
+  text-shadow 1px 1px 0px #fff // nice subtle inset effect
+
+.nav-pills
+  text-shadow none
+
 article aside 
   margin-left 0
   padding-left 19px
-  border-left 1px solid #aaa
+  border-left 1px solid #ddd
   text-align center
 
 footer
@@ -56,10 +61,15 @@ footer
 a
   color #022b4f
 
-// Twitter Boostrap
+.sidebar-social
+  font-size 3em
+  a
+    color #777
+  a:hover
+    color #022B4F
+    text-decoration none
 
-.navbar-fixed-top .container, .navbar-fixed-bottom .container
-  width 940px
+// Twitter Boostrap
 
 .carousel-inner
   text-align center
@@ -77,32 +87,27 @@ a
   display inline-block 
   float none
 
-.nav-collapse .nav > li > a.build,
-.nav-collapse .dropdown-menu a.build 
-  color #666
-
 .affix
   top 40px
   background-color #eee
   opacity 0.95
 
 
+.inset-text
+  /* Shadows are visible under slightly transparent text color */
+  color rgba(68,68,68, 0.8)
+  text-shadow 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def
+
+.inset-text:hover
+  color rgba(2,43,79, 0.8)
+
 /*
  * Responsive layout settings
  */
 
-@import 'bootstrap-responsive.min.css'
-
 // Twitter bootstrap settings
 .navbar-fixed-top
   margin-bottom 0px
-
-// Set color for nav-pills, didn't solve had to edit bootstrap.min.css
-//.nav-pills > a:hover
-//  background-color #666
-
-//.nav-pills > .active > a, .nav-pills > .active > a:hover
-//  background-color #666
 
 /*
  * Media queries

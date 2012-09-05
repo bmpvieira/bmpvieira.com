@@ -1,6 +1,6 @@
 .span3
   aside
-    img(alt='Bruno Vieira', src='/img/bmpvieira.jpg', title='Bruno Vieira')
+    img.img-polaroid(alt='Bruno Vieira', src='/img/bmpvieira.jpg', title='Bruno Vieira')
     .sidebar-personal-info
       :markdown
         ###Personal information
@@ -11,8 +11,11 @@
         **E-mail:** [mail@bmpvieira.com](mailto:mail@bmpvieira.com)  
         **Languages:** Portuguese, English and French  
         **Web identity:** bmpvieira
-      .sidebar-social
-        :markdown
-          [![Twitter](/img/icons/twitter.png "Twitter")](https://twitter.com/bmpvieira "Twitter")
-          [![GitHub](/img/icons/github.png "GitHub")](http://github.com/bmpvieira "GitHub")
-          [![LinkedIn](/img/icons/linkedin.png "LinkedIn")](http://pt.linkedin.com/in/bmpvieira "LinkedIn")
+    br
+    .sidebar-social
+      a(href='https://twitter.com/bmpvieira')
+        i.icon-twitter.inset-text &nbsp;
+      a(href='http://github.com/bmpvieira')
+        i.icon-github.inset-text &nbsp;
+      a(href='http://pt.linkedin.com/in/bmpvieira')
+        i.icon-linkedin.inset-text &nbsp;
