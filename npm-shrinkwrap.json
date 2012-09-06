@@ -1,0 +1,170 @@
+{
+  "name": "bmpvieira",
+  "version": "2.0.0",
+  "dependencies": {
+    "express": {
+      "version": "3.0.0rc3",
+      "dependencies": {
+        "connect": {
+          "version": "2.4.3",
+          "dependencies": {
+            "qs": {
+              "version": "0.4.2"
+            },
+            "formidable": {
+              "version": "1.0.11"
+            },
+            "bytes": {
+              "version": "0.1.0"
+            },
+            "pause": {
+              "version": "0.0.1"
+            }
+          }
+        },
+        "commander": {
+          "version": "0.6.1"
+        },
+        "range-parser": {
+          "version": "0.0.4"
+        },
+        "mkdirp": {
+          "version": "0.3.3"
+        },
+        "cookie": {
+          "version": "0.0.4"
+        },
+        "crc": {
+          "version": "0.2.0"
+        },
+        "fresh": {
+          "version": "0.1.0"
+        },
+        "methods": {
+          "version": "0.0.1"
+        },
+        "send": {
+          "version": "0.0.3",
+          "dependencies": {
+            "mime": {
+              "version": "1.2.6"
+            }
+          }
+        },
+        "debug": {
+          "version": "0.7.0"
+        }
+      }
+    },
+    "coffee-script": {
+      "version": "1.3.3"
+    },
+    "connect": {
+      "version": "2.4.4",
+      "dependencies": {
+        "qs": {
+          "version": "0.4.2"
+        },
+        "formidable": {
+          "version": "1.0.11"
+        },
+        "crc": {
+          "version": "0.2.0"
+        },
+        "cookie": {
+          "version": "0.0.4"
+        },
+        "bytes": {
+          "version": "0.1.0"
+        },
+        "send": {
+          "version": "0.0.4",
+          "dependencies": {
+            "mime": {
+              "version": "1.2.6"
+            },
+            "range-parser": {
+              "version": "0.0.4"
+            }
+          }
+        },
+        "fresh": {
+          "version": "0.1.0"
+        },
+        "pause": {
+          "version": "0.0.1"
+        },
+        "debug": {
+          "version": "0.7.0"
+        }
+      }
+    },
+    "connect-assets": {
+      "version": "2.3.3",
+      "dependencies": {
+        "connect-file-cache": {
+          "version": "0.2.4"
+        },
+        "mime": {
+          "version": "1.2.2"
+        },
+        "snockets": {
+          "version": "1.3.8",
+          "dependencies": {
+            "coffee-script": {
+              "version": "1.3.3"
+            },
+            "dep-graph": {
+              "version": "1.1.0",
+              "dependencies": {
+                "underscore": {
+                  "version": "1.2.1"
+                }
+              }
+            },
+            "uglify-js": {
+              "version": "1.0.7"
+            }
+          }
+        },
+        "underscore": {
+          "version": "1.1.7"
+        }
+      }
+    },
+    "jade": {
+      "version": "0.27.2",
+      "dependencies": {
+        "commander": {
+          "version": "0.6.1"
+        },
+        "mkdirp": {
+          "version": "0.3.0"
+        }
+      }
+    },
+    "marked": {
+      "version": "0.2.5"
+    },
+    "stylus": {
+      "version": "0.29.0",
+      "dependencies": {
+        "cssom": {
+          "version": "0.2.5"
+        },
+        "mkdirp": {
+          "version": "0.3.4"
+        },
+        "debug": {
+          "version": "0.7.0"
+        }
+      }
+    },
+    "nib": {
+      "version": "0.8.1"
+    },
+    "less": {
+      "version": "1.3.0"
+    }
+  }
+}
