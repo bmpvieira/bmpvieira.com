@@ -37,10 +37,6 @@ if 'production' is app.get('env') or 'staging' is app.get('env')
   app.use express.static(__dirname + '/assets', { maxAge: 31557600000 })
   app.use express.static(__dirname + '/builtAssets', { maxAge: 31557600000 })
 
-# Custom error messages for production
-if app.settings.env is 'production'
-  require('./app/error-handler')(app)
-
 # Routes
 app.get '/', (req, res) ->
   res.render 'index'
@@ -50,6 +46,10 @@ app.get '/cv', (req, res) ->
 
 app.get '/py101', (req, res) ->
   res.redirect '/python101/day2_data_structures.html'
+
+# Custom error messages for production
+if app.settings.env is 'production'
+  require('./app/error-handler')(app)
 
 # Start listening on <port>
 port = process.argv[2] or process.env.PORT or 3000
