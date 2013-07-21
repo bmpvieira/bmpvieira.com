@@ -47,6 +47,9 @@ app.get '/cv', (req, res) ->
 app.get '/py101', (req, res) ->
   res.redirect '/python101/day2_data_structures.html'
 
+app.get '/py101_exs', (req, res) ->
+  res.redirect '/python101/day2_data_structures_exercises.ipynb'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)

@@ -9,252 +9,65 @@ block content
       .span9
         section.main
           .subnav(data-spy="affix", data-offset-top="150")
-            ul.nav.nav-pills
-              li.dropdown
-                a.dropdown-toggle(data-toggle="dropdown", href="#")
-                  | Informatics
-                  b.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='#education') Education
-                      a(href='#teaching') Teaching
-                      a(href='#web-development') Web development
-                      a(href='#software-development') Software development
-                      a(href='#community') Community
-                      a(href='#skills') Skills
-              li.dropdown
-                a.dropdown-toggle(data-toggle="dropdown", href="#")
-                  | Biology
-                  b.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='#bioeducation') Education
-                      a(href='#bioskills') Skills
-                      a(href='#papers') Papers
-                      a(href='#projects') Projects
-                      a(href='#bioteaching') Teaching
-                      a(href='#talks') Talks
-                      a(href='#bioposters') Posters
-                      a(href='#conferences') Conferences
-              li
-                a(href='#others') Others
+            ul#menu.nav.nav-pills
 
-          h1#informatics Informatics
-          h2#education Education
-          :markdown
-            ### Classes
-            #### Faculty of Sciences of the University of Lisbon
-            * 2010 - **Fundamentals of Programming** from the MSc in Bioinformatics and Computational Biology  
-              Grade: 16/20
-
-            * 2010 - **Introduction to Databases** from the MSc in Bioinformatics and Computational Biology  
-              Grade: 17/20
-
-            ### Workshops
-            * 2012 - [Node.js Workshop](http://2012.lxjs.org/workshops/#/node) by [Mikeal Rogers](http://twitter.com/mikeal) and [Daniel Shaw](http://twitter.com/dshaw) at [Lisbon Javascript 2012](http://2012.lxjs.org/)
-            * 2012 - ["Cooking with Backbone and Socket.io 101"](http://2012.lxjs.org/workshops/#/backbone) by [Igor Soarez](http://twitter.com/igorsoarez) and [João Duarte](http://twitter.com/jdduarte) at [Lisbon Javascript 2012](http://2012.lxjs.org/)
-
-          .page-break
-          h2#teaching Teaching
-          :markdown
-            * 2012 - **Instructor** of the course [**"Python 101: by biologists for biologists"**](http://cobig2.fc.ul.pt/python101) at FCUL  
-              Some material that I gave:
-              - [presentation slides](/python101/day2_data_structures.html) made in [markdown](http://daringfireball.net/projects/markdown/) and rendered with [Node.js](http://nodejs.org/), [Deck.js](http://imakewebthings.com/deck.js/), [CodeMirror](http://codemirror.net/) and [Skulpt](http://www.skulpt.org/)  
-              - [exercises](/python101/day2_data_structures_exercises.ipynb) made with [iPython](http://ipython.org/)  
-
-          h2#web-development Web development
-          :markdown
-            ###currently
-            * [XIV Congress of the European Society for Evolutionary Biology (ESEB 2012)](http://eseb2013.com)  
-              built with: [Node.js](http://nodejs.org/), [express.js](http://expressjs.com/), [bootstrap](http://twitter.github.com/bootstrap/) and [MongoDB](http://www.mongodb.org/)  
-            
-            * [Bruno Vieira's Personal website](http://bmpvieira.com)  
-              built with: [Node.js](http://nodejs.org/), [express.js](http://expressjs.com/), [bootstrap](http://twitter.github.com/bootstrap/)
-
-            ###previously
-            * 2011 - [Cork Oak EST Consortium](http://coec.fc.ul.pt) (accessed on 2012-08-29)  
-              built with: [Joomla](http://www.joomla.org)  
-            
-            * 2010 - [Computational Biology & Population Genomics Group (CoBiG²)](http://cobig2.fc.ul.pt) (accessed on 2012-08-29)  
-              built with: [Joomla](http://www.joomla.org)
-
-            ### helped deploying
-            * 2011 - [Mestrado em Bioinformática e Biologia Computacional](http://bbc.fc.ul.pt) (accessed on 2012-08-29)  
-              built with: [Joomla](http://www.joomla.org)
-
-            * 2010 - [Pós Graduação em Biodiversidade Adaptação e Alterações Globais](http://baag.fc.ul.pt) (accessed on 2012-08-29)  
-              built with: [Joomla](http://www.joomla.org)  
-
-          h2#software-development Software development
-          :markdown
-            Vieira, BM (2009). [**Colony Counter: an ImageJ plugin for automatically enumerating *Escherichia coli* colonies**](http://rsb.info.nih.gov/ij/plugins/colony-counter.html).
-              Published in Comprehending the Cost of Antibiotics Resistance in Bacteria.
-              Masters thesis in Human Biology and Environment. Faculty of Sciences of the University of Lisbon  
-              (accessed on 2012-08-29)
-
-          .page-break
-          h2#community Community
-          :markdown
-            ### Conferences 
-            [LXJS Lisbon Javascript 2012](http://2012.lxjs.org/)
-
-            ### Packages maintainer
-            [Arch Linux AUR maintainer of 4 bioinformatic packages](https://aur.archlinux.org/packages.php?SeB=m&K=bmpvieira)
-            (accessed on 2012-03-30)
-
-          h2#skills Skills
-          :markdown
-            ### Programming languages
-            Javascript, Coffeescript, Python (numpy, matplotlib, etc), Java, R and bash scripting
-            
-            ### Web languages
-            HTML5, CSS3, Stylus
-
-            ### Templating engines
-            Jade, Dust.js
-
-            ### Databases
-            MongoDB (used in production)  
-            Neo4J (in [testing](http://neo4j-playground.herokuapp.com/))  
-            HDF5 (in testing)  
-            SQL (learned in college)
-
-            ###Integrated Development Environments
-            Sublime-text 2 (used in production)  
-            Vim (in production)  
-            Cloud9 (in testing)  
-            Eclipse (in college)
-
-            ### Distributed Revision Control
-            Git
-
-          .page-break
-          :markdown
-            ### Languages for writing
-            LaTeX and Markdown
-
-            ### Operating Systems Administration
-            GNU/Linux (server and desktop)  
-            Windows (desktop)  
-            Android
-
-            ### Content Management Systems
-            Joomla, Wordpress, Drupal
-
-            ### Editing skills
-            Vectorial images (Inkscape)  
-            Pixmaps images (Gimp)  
-            Audio and Video
-
-          h1#biology Biology
-          h2#bioeducation Education
-          :markdown
-            ###Degrees
-            #### Master's thesis in Human Biology and Environment
-            Vieira, BM  (2009). **Comprehending the Cost of Antibiotics
-            Resistance in Bacteria.** Faculty of Sciences of the University of
-            Lisbon (FCUL)  
-            Grade: 17/20
-
-            #### Degree in Cell Biology and Biotechnology
-            2004-2007 - Faculty of Sciences of the University of Lisbon (FCUL  
-            Grade: 13/20
-
-            ###Courses taken
-            * 2010 - **Practical Course on Phylogenetics**, Centre for Environmental Biology (CBA), Lisbon, Portugal  
-            * 2010 - **Practical Course on Phylogeography**, Centre for Environmental Biology (CBA), Lisbon, Portugal
-
-          .page-break
-          h2#bioskills Skills
-          :markdown
-            ###Bioinformatics
-            * Next-generation sequencing (NGS) data processing and analysis  
-            * Phylogeography and phylogenetics software
-            
-            ###Others
-            Microbiological cultures
-
-          h2#papers Papers
-          :markdown
-            ### Submitted
-            Pina-Martins, F, **Vieira, BM**, Seabra, SG, Batista, D, Paulo, OS.
-            **4Pipe4 – A 454 data analysis pipeline specialized for SNP detection.**
-
-            ### Manuscript in preparation
-            Talhinhas, P, et al. **Transcriptomic analysis of *Hemileia vastatrix* in pre and post-penetration stages.**
-
-            ### Papers in conference proceedings
-            Talhinhas, P, Azinheira, HG, Loureiro, A, Batista, D, **Vieira, BM**, Pina-Martins, F, Tisserant, E, Petitot, AS, Paulo, OS, Duplessis, S, Silva, MC, and Fernandez, D (2010). [**Overview of the functional virulent genome of the coffee leaf rust pathogen *Hemileia vastatrix*.**](http://www.asic2010bali.org) In proceedings at the 23rd International Conference on Coffee Science from the Association for Science and Information on Coffee (ASIC). Indonesian Coffee and Cocoa Research Institute (ICCRI), Bali, Indonesia. (accessed on 2010-12-27)
-
-          h2#projects Projects
-          :markdown
-            FCT Project: [SOBREIRO/0036/2009 Cork oak ESTs Consortium - Polymorphism detection and validation](http://www.fct.pt/apoios/projectos/consulta/vglobal_projecto?idProjecto=109256&idElemConcurso=2918)  
-                Participation: 25%  
-                Institution: Fundação da Faculdade de Ciências (FFC/FC/UL)  
-                Research unit: Centro de Biologia Ambiental (CBA/FC/UL)  
-                Budget: € 49 480,00  
-                (accessed on 2012-08-29)
-
-          h2#bioteaching Teaching
-          :markdown
-            2010-11-25 - Class lecture about **Next-generation sequencing** for the MSc in 
-            Bioinformatics and Computational Biology
-
-          .page-break
-          h2#talks Talks
-          :markdown
-            **Vieira, BM**, Pina-Martins, F, Seabra, SG, and Paulo, OS (2010).
-            [**Analysis of software for the NGS technology: The Survival
-            Guide.**](http://www.euro2010lisbon.org) Presented at the 24th European Conference on Operational Research. Faculty of Sciences of the University of Lisbon (FCUL), Lisbon, Portugal. (accessed on 2012-03-30)
-
-          h2#bioposters Posters
-          :markdown
-            * 2010 - Talhinhas, P, Azinheira, HG, Vieira, A, Loureiro, A, **Vieira, BM**, Pina-Martins, F, Batista, D, Tisserant, E, Morin, E, Petitot, AS, Paulo, OS, Duplessis, S, Silva, MC, and Fernandez, D (2010). [**Transcriptomic analysis of *Hemileia vastatrix* in pre and post-penetration stages.**](http://www.efpp10.uevora.pt) Exhibited at the 9th Conference of the European Foundation for Plant Pathology (EFPP)/6th Congress of the Portuguese Society for Phytopathology (SPF). University of Évora (UE), Évora, Portugal. (accessed on 2012-03-30)
-
-            * 2010 - Talhinhas, P, Azinheira, HG, Loureiro, A, Batista, D, **Vieira, BM**, Pina-Martins, F, Tisserant, E, Petitot, AS, Paulo, OS, Duplessis, S, Silva, MC, and Fernandez, D (2010). [**Overview of the functional virulent genome of the coffee leaf rust pathogen *Hemileia vastatrix*.**](http://www.asic2010bali.org) Exhibited at the 23rd International Conference on Coffee Science from the Association for Science and Information on Coffee (ASIC). Indonesian Coffee and Cocoa Research Institute (ICCRI), Bali, Indonesia. (accessed on 2010-12-27)
-
-          h2#conferences Conferences attended
-          :markdown
-            * [**VI Encontro Nacional de Biologia Evolutiva**](http://biologia-evolutiva.net) (2010). Faculty of Sciences of the University of Lisbon (FCUL), Lisbon, Portugal (accessed on 2012-03-30)
-
-            * [**Science 2010 - Meeting Science in Portugal**](http://www.ciencia2010.pt) (2010). Lisbon Congress Center, Portugal (accessed on 2012-03-30)
-
-            * [**V Encontro Nacional de Biologia Evolutiva**](http://biologia-evolutiva.net) (2009). Instituto Superior de Psicologia Aplicada (ISPA), Lisbon, Portugal (accessed on 2012-03-30)
-
-            * [**IV Encontro Nacional de Biologia Evolutiva**](http://biologia-evolutiva.net) (2008). Instituto de Biologia Molecular e Celular (IBMC), Porto, Portugal (accessed on 2012-03-30)
-
-            * [**III Congresso da Ordem dos Biólogos: "Bioeconomia"**](http://www.ordembiologos.pt/bioeconomia) (2008). Aula Magna, Lisbon, Portugal (accessed on 2008-02-27)
-
-          .page-break
-          h1#others Design
-          h2#posters Posters
-          :markdown
-            2012 - Poster for the course [**"Python 101: by biologists 
-            for biologists"**](http://bit.ly/py101poster) (accessed on 2012-08-29)
-
-            2010 - Poster for the [**"Pós Graduação em Biodiversidade Adaptação e Alterações Globais"**](http://bit.ly/baagposter) (accessed on 2012-08-29)
-
-          h2#logos Logos
-          :markdown
-            2010 - Logo for the [**Computational Biology &
-            Population Genomics Group (CoBiG²)**](http://cobig2.fc.ul.pt) (accessed on 2012-08-29)
-
-          h1#arts Arts
-          :markdown
-            Piano (4th degree) in Lisbon National Conservatory of Music
-
-          h1#sports Sports
-          :markdown
-            Kung Fu (Choy Lee Fut) from 2007 to 2008 (6 months) and Karate during childhood
+          include partials/cv_markdown
       include partials/info
 
 append js
   script
     $(document).ready(function() {
+
+      var current_h1_id
+
+      $('h1').each(function(i, e) {
+        var id = $(e).text().replace(/[\s\.]/g, '-').toLowerCase()
+
+        if (i !== 0) {
+
+          $(e).attr('id', id);
+
+          $('ul#menu').append(
+            ['<li class="dropdown"><a class=dropdown-toggle data-toggle="dropdown" href="#">'
+            , $(e).text()
+            , '<b class="caret"></b></a><ul class="dropdown-menu" id="'
+            , id
+            , '-menu"></ul></li>'
+            ].join('')
+          )
+        }
+      });
+
+      $('h2').each(function(i, e) {
+        var h1_id = $(e).prev('h1').text().replace(/[\s\.]/g, '-').toLowerCase()
+          , h2_id = $(e).text().replace(/[\s\.]/g, '-').toLowerCase()
+
+        $(e).attr('id', h2_id);
+
+        if (typeof current_h1_id === 'undefined' || h1_id !== '') {
+          current_h1_id = h1_id
+        }
+
+        if (h1_id === '') {
+          h1_id = current_h1_id
+        }
+
+        $('ul#'+h1_id+'-menu').append(
+          ['<li><a href="#'
+          , h2_id
+          , '">'
+          , $(e).text()
+          , '</a></li>'
+          ].join('')
+        )
+      });
+      $('.dropdown-toggle').dropdown()
+
+      // Scroll animation
       $('.nav-pills li a').click(function(event) {
           event.preventDefault();
           $('html, body').animate({
-            scrollTop: $($($(this).attr('href'))[0]).offset().top - 130
+            scrollTop: $($($(this).attr('href'))[0]).offset().top - 100
           }, 1500);
       });
     });

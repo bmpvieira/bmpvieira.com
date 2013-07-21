@@ -1,5 +1,8 @@
 /* Based on Hartija Css Print  Framework Version:   0.8 (2008-03-10) */
 @media only print {
+  html {
+    background: none;
+  }
   body { 
     width:100% !important;
     margin:0 !important;
@@ -7,10 +10,10 @@
     line-height: 1.4;
     word-spacing: 1.1pt;
     letter-spacing: 0.2pt;
-    font-family: 'Gentium Basic', Garamond,"Times New Roman", serif !important;
+    font-family: 'Gentium Basic', Garamond,'Times New Roman', serif !important;
     color: #000;
     background: none;
-    font-size: 12pt;
+    font-size: 1em;
     text-shadow: none !important;
   }
   article {
@@ -18,22 +21,28 @@
   }
   p, ul, li, span {
     font-family: 'Gentium Basic', Garamond,"Times New Roman", serif !important;
+    orphans: 4 !important;
+    widows: 4 !important;
   }
   /*Headings */
-  h1,h2,h3,h4,h5,h6 { 
+  h1,h2,h3,h4,h5,h6 {
     font-family: 'Gentium Basic',"Droid Sans", "Ubuntu", Helvetica, Arial, sans-serif;
   }
   h1 {
-    font-size: 18pt !important;
+    padding: 3%;
+    font-size: 3em !important;
   }
   h2 {
-    font-size: 16pt !important;
+    font-size: 2em !important;
   }
   h3 {
-    font-size: 14pt !important;
+    font-size: 1.3em !important;
   }
-  h4,h5,h6 {
-    font-size: 12pt !important;
+  h4 {
+    font-size: 1.3em !important;
+  }
+  h5,h6 {
+    font-size: 1.1em !important;
   }
   .page-header {
     background-color: #f5f5f5;
@@ -41,8 +50,8 @@
     margin: -20px -20px 20px;
   }
   .page-break {
-    display:block;
-    page-break-before:always;
+    display:block !important;
+    page-break-before: always !important;
   }
   code {
     font: 8pt Courier, monospace;
@@ -50,7 +59,7 @@
   blockquote {
     margin: 1.3em;
     padding: 1em;
-    font-size: 10pt;
+    font-size: 1em;
   }
   hr {
     background-color: #ccc;
@@ -68,19 +77,24 @@
   a:link, a:visited { 
     background: transparent; 
     font-weight: 700; 
-    text-decoration: underline;
+  /* text-decoration: underline; */
     color:#333; 
   }
   a:link[href^="http://"]:after, a[href^="http://"]:visited:after { 
-    content: " (" attr(href) ") "; 
-    font-size: 70%; 
+    content: " (" attr(href) ") ";
+    font-size: .8em;
   }
   a:link[href^="https://"]:after, a[href^="https://"]:visited:after { 
-    content: " (" attr(href) ") "; 
-    font-size: 70%; 
+    content: " (" attr(href) ") ";
+    font-size: .8em;
   }
   a[href^="http://"] {
     color:#000; 
+  }
+
+  a.social:after {
+    content: " (" attr(href) ")\a" !important;
+    white-space: pre;
   }
 
   /* Table */
@@ -113,7 +127,7 @@
 
   .span9 {
     width: 100%;
-    font-size: 8pt;
+    font-size: 1em;
   }
 
   .span3 {
@@ -122,7 +136,7 @@
     position:absolute;
     top:85px;
     z-index:-1;
-    font-size: 75% !important;
+    font-size: 1em !important;
     margin-left: 0;
     padding-left: 20px;
     border-left: 1px solid #eee;
@@ -160,9 +174,12 @@
     font-size: 1em !important;
   }
   .sidebar-social > a > i {
-    display: none !important;
-    font-size: 12pt;
+    /*display: none !important;*/
+    color: black;
+    text-shadow: none;
+    font-size: 1em;
   }
+
   aside > img {
       width: 150px !important;
       float: right !important;
@@ -181,7 +198,7 @@
   .span9 {
     position: absolute !important;
     border: none !important;
-    margin-top: 250px !important;
+    margin-top: 320px !important;
     position: absolute !important;
     width: 90% !important;
   }
