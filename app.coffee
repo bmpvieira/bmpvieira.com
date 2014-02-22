@@ -50,6 +50,9 @@ app.get '/py101', (req, res) ->
 app.get '/py101_exs', (req, res) ->
   res.redirect '/python101/day2_data_structures_exercises.ipynb'
 
+app.get '/ccs14', (req, res) ->
+  res.redirect '//bmpvieira.github.io/ccs14'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
