@@ -53,6 +53,9 @@ app.get '/py101_exs', (req, res) ->
 app.get '/ccs14', (req, res) ->
   res.redirect '//bmpvieira.github.io/ccs14'
 
+app.get '/seminar14', (req, res) ->
+  res.redirect '//bmpvieira.github.io/seminar14'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
