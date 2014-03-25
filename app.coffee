@@ -59,6 +59,9 @@ app.get '/seminar14', (req, res) ->
 app.get '/labjolly14a', (req, res) ->
   res.redirect '//bmpvieira.github.io/labjolly14a'
 
+app.get '/cw14', (req, res) ->
+  res.redirect '//bmpvieira.github.io/cw14'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
