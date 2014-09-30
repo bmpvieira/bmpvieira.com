@@ -65,10 +65,10 @@ app.get '/cw14', (req, res) ->
 app.get '/allbio14', (req, res) ->
   res.redirect '//bmpvieira.github.io/allbio14'
 
-app.get '/assembly-talk', (req, res) ->
+app.get '/assembly14-talk', (req, res) ->
   res.redirect '//bmpvieira.github.io/stuff'
 
-app.get '/assembly-practical', (req, res) ->
+app.get '/assembly14-practical', (req, res) ->
   res.redirect 'https://gist.github.com/bmpvieira/d5f0fd6b0fd13ef8c8a4'
 
 # Custom error messages for production
