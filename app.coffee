@@ -66,10 +66,10 @@ app.get '/allbio14', (req, res) ->
   res.redirect '//bmpvieira.github.io/allbio14'
 
 app.get '/assembly14-talk', (req, res) ->
-  res.redirect '//bmpvieira.github.io/stuff'
+  res.redirect '//bmpvieira.github.io/assembly14'
 
 app.get '/assembly14-practical', (req, res) ->
-  res.redirect 'https://gist.github.com/bmpvieira/d5f0fd6b0fd13ef8c8a4'
+  res.redirect 'https://github.com/bmpvieira/assembly14/blob/master/assembly-practical.md'
 
 # Custom error messages for production
 if app.settings.env is 'production'
