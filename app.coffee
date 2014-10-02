@@ -71,6 +71,9 @@ app.get '/assembly14-talk', (req, res) ->
 app.get '/assembly14-practical', (req, res) ->
   res.redirect 'https://github.com/bmpvieira/assembly14/blob/master/assembly-practical.md'
 
+app.get '/annotation14', (req, res) ->
+  res.redirect 'http://bmpvieira.github.io/stuff'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
