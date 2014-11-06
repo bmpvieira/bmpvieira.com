@@ -65,6 +65,15 @@ app.get '/cw14', (req, res) ->
 app.get '/allbio14', (req, res) ->
   res.redirect '//bmpvieira.github.io/allbio14'
 
+app.get '/assembly14-talk', (req, res) ->
+  res.redirect '//bmpvieira.github.io/assembly14'
+
+app.get '/assembly14-practical', (req, res) ->
+  res.redirect 'https://github.com/bmpvieira/assembly14/blob/master/assembly-practical.md'
+
+app.get '/annotation14', (req, res) ->
+  res.redirect 'http://bmpvieira.github.io/stuff'
+
 app.get '/sanger14', (req, res) ->
   res.redirect '//bmpvieira.github.io/sanger14'
 
