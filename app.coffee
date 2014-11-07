@@ -77,6 +77,9 @@ app.get '/annotation14', (req, res) ->
 app.get '/sanger14', (req, res) ->
   res.redirect '//bmpvieira.github.io/sanger14'
 
+app.get '/wurmlab-meeting14b', (req, res) ->
+  res.redirect '//bmpvieira.github.io/wurmlab-meeting14b'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
