@@ -82,9 +82,12 @@ app.get '/wurmlab-meeting14b', (req, res) ->
 
 app.get '/wurmlab-meeting14c', (req, res) ->
   res.redirect '//bmpvieira.github.io/wurmlab-meeting14c'
-  
+
 app.get '/orcambridge14', (req, res) ->
   res.redirect '//bmpvieira.github.io/orcambridge14'
+
+app.get '/enbe14', (req, res) ->
+  res.redirect '//bmpvieira.github.io/enbe14'
 
 # Custom error messages for production
 if app.settings.env is 'production'
