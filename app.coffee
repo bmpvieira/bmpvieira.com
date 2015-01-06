@@ -89,6 +89,9 @@ app.get '/orcambridge14', (req, res) ->
 app.get '/enbe14', (req, res) ->
   res.redirect '//bmpvieira.github.io/enbe14'
 
+app.get '/pgg48', (req, res) ->
+  res.redirect '//bmpvieira.github.io/pgg48'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
