@@ -1,0 +1,19 @@
+.span3
+  .aside-left
+    .row-fluid
+      .span8.span-offset-2
+        a.btn.btn-block.btn-lg.btn-primary(href="http://twitter.com/bmpvieira")
+          i.fui-twitter
+          | Twitter
+    .row-fluid
+      a.twitter-timeline(href="https://twitter.com/bmpvieira", data-widget-id="574907989028651008", data-chrome="transparent noheader nofooter noborders noscrollbar", data-tweet-limit="20") Tweets by @bmpvieira
+      script.
+        !function(d,s,id) {
+          var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+          if (!d.getElementById(id)) {
+            js=d.createElement(s);
+            js.id=id;
+            js.src=p+"://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js,fjs);
+          }
+        }(document,"script","twitter-wjs");
