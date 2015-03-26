@@ -95,6 +95,9 @@ app.get '/pgg48', (req, res) ->
 app.get '/wurmlab-meeting15a', (req, res) ->
   res.redirect '//bmpvieira.github.io/wurmlab-meeting15a'
 
+app.get '/cw15', (req, res) ->
+  res.redirect '//bmpvieira.github.io/cw15'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
