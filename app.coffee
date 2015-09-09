@@ -104,6 +104,9 @@ app.get '/wurmlab-meeting15b', (req, res) ->
 app.get '/bosc15', (req, res) ->
   res.redirect '//www.dropbox.com/s/h4guygat071m7fv/bmpvieira-bosc.pdf?dl=0'
 
+app.get '/wurmlab-meeting15c', (req, res) ->
+  res.redirect '//bmpvieira.github.io/wurmlab-meeting15c'
+
 # Custom error messages for production
 if app.settings.env is 'production'
   require('./app/error-handler')(app)
