@@ -110,7 +110,7 @@ app.get '/wurmlab-meeting15c', (req, res) ->
 app.get '/biohack15', (req, res) ->
   res.redirect '//www.dropbox.com/s/hae8rs2dti05eft/bmpvieira-biohack15.pdf?dl=0'
 
-app.get '/biohack15', (req, res) ->
+app.get '/biocoders15a', (req, res) ->
   res.redirect '//www.dropbox.com/s/xn01kmjq7au0ybc/bmpvieira-biocoders15a.pdf?dl=0'  
 
 # Custom error messages for production
