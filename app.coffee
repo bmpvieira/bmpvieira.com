@@ -114,7 +114,7 @@ app.get '/biocoders15a', (req, res) ->
   res.redirect '//www.dropbox.com/s/xn01kmjq7au0ybc/bmpvieira-biocoders15a.pdf?dl=0'
 
 app.get '/BioinformLon16', (req, res) ->
-  res.redirect '//www.dropbox.com/s/g0rdf6mqqehr2qg/bmpvieira-bioinformaticsLon16.pdf?dl=0'
+  res.redirect '//www.dropbox.com/s/nx7b10w8fl27729/bmpvieira-bioinformaticsLon16.pdf?dl=0'
 
 # Custom error messages for production
 if app.settings.env is 'production'
