@@ -6,13 +6,13 @@ block content
   article
     //- remove when makeRow() fluid supported
     .row-fluid
-      .span9
+      include partials/info
+      .span12
         section.main
           .subnav(data-spy="affix", data-offset-top="150")
             ul#menu.nav.nav-pills
 
           include partials/cv_markdown
-      include partials/info
 
 append js
   script
